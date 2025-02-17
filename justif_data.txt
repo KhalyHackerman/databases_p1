@@ -1,0 +1,7 @@
+We used a primary key (underlined) for each entity as it is the simplest way to identify a record. 
+We however used a superkey for the location's primary key as it seems redundant to use an id while you can use a unique combination of attributes such as the street name , street number and the city of the location.
+
+The 'is' relationship denotes inheritance between entities. For example, all storage are locations so we designed our diagram to represent this mother-child link. The 'children' entity are therefore weak entities (double rectangles) as they wouldn't exist without the mother entity. 
+
+The 'in' relationship represents the moves of pieces of arts. The attributes linked to the relationship (day_last_move and target_location) are used to track the moves and respect the given constraints on the moves (at most 1 move per day) 
+
